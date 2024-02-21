@@ -47,31 +47,31 @@
       <div id="destra" class="flex flex-col">
         <h3 class="font-medium mb-[10px]">Supplementi:</h3>
         <div class="mb-[10px]">
-          <input type="checkbox" id="lattuga">
+          <input type="checkbox" id="lattuga" onclick="price()">
           <label for="lattuga">Lattuga 1€</label>
         </div>
         <div class="mb-[10px]">
-          <input type="checkbox" id="pomodoro">
+          <input type="checkbox" id="pomodoro" onclick="price()">
           <label for="pomodoro">Pomodoro 1€</label>
         </div>
         <div class="mb-[10px]">
-          <input type="checkbox" id="bacon">
+          <input type="checkbox" id="bacon" onclick="price()">
           <label for="bacon">Bacon 1.50€</label>
         </div>
         <div class="mb-[10px]">
-          <input type="checkbox" id="maionese">
+          <input type="checkbox" id="maionese" onclick="price()">
           <label for="maionese">Maionese 0.50€</label>
         </div>
       </div>
     </div>
-
+    <!-- Sezione bottone Conto e Inserimento Coupon -->
     <section class="w-full flex justify-between items-center mt-[80px] px-[110px] ">
       <div id="button" class="shadow-md bg-[#fcb97d] w-[150px] h-[45px] flex justify-center items-center cursor-pointer">
         <span class="font-medium">Calcola il prezzo</span>
       </div>
       <div id="sconto" class=" flex flex-col w-[250px] ">
         <label for="" class="font-medium">Inserisci il tuo codice sconto:</label>
-        <input onclick="codice()" id="codice" type="text" class="h-[35px] shadow-md">
+        <input onclick="coupon()" id="codice" type="text" class="h-[35px] shadow-md">
       </div>
     </section>
 
