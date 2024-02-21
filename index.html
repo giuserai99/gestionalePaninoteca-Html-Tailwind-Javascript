@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Paninoteca</title>
+</head>
+<!-- Giuseppe Raineri-2024 
+     Gestionale paninoteca
+     Html-Tailwind-Js
+-->
+<body class="p-[50px] bg-[#b5b8a3] ">
+
+  <header>
+    <!-- Titolo -->
+    <div id="titolo" class="font-semibold text-[20px] mb-[30px] ">
+      Il panino di
+    </div>
+  </header>
+
+  <main>
+    <!-- Container -->
+    <div id="container" class="flex mx-auto max-w-[650px] justify-around rounded-md bg-[#edd892] ">
+      <!-- Sx -->
+      <div id="sinistra" class="flex flex-col">
+        <h3 class="font-medium mb-[10px]">Ingrediente principale:</h3>
+        <div class="mb-[10px]">
+          <input type="checkbox" id="hambuger">
+          <label for="hambuger">Hambuger 2.50€</label>
+        </div>
+        <div class="mb-[10px]">
+          <input type="checkbox" id="cotoletta">
+          <label for="cotoletta">Cotoletta 2€</label>
+        </div>
+        <div class="mb-[10px]">
+          <input type="checkbox" id="vegano">
+          <label for="vegano">Hambger vegano 3.50€</label>
+        </div>
+        <div class="mb-[10px]">
+          <input type="checkbox" id="salmone">
+          <label for="salmone">Salmone 3€</label>
+        </div>
+      </div>
+      <!-- Dx -->
+      <div id="destra" class="flex flex-col">
+        <h3 class="font-medium mb-[10px]">Supplementi:</h3>
+        <div class="mb-[10px]">
+          <input type="checkbox" id="lattuga">
+          <label for="lattuga">Lattuga 1€</label>
+        </div>
+        <div class="mb-[10px]">
+          <input type="checkbox" id="pomodoro">
+          <label for="pomodoro">Pomodoro 1€</label>
+        </div>
+        <div class="mb-[10px]">
+          <input type="checkbox" id="bacon">
+          <label for="bacon">Bacon 1.50€</label>
+        </div>
+        <div class="mb-[10px]">
+          <input type="checkbox" id="maionese">
+          <label for="maionese">Maionese 0.50€</label>
+        </div>
+      </div>
+    </div>
+
+    <section class="w-full flex justify-between items-center mt-[80px] px-[110px] ">
+      <div id="button" class="shadow-md bg-[#fcb97d] w-[150px] h-[45px] flex justify-center items-center cursor-pointer">
+        <span class="font-medium">Calcola il prezzo</span>
+      </div>
+      <div id="sconto" class=" flex flex-col w-[250px] ">
+        <label for="text" class="font-medium">Inserisci il tuo codice sconto:</label>
+        <input onclick="codice()" type="text" class="h-[35px] shadow-md">
+      </div>
+    </section>
+
+    <!-- Sezione conto -->
+    <section>
+      <div id="conto" class="px-[110px] flex flex-col mt-[45px] font-medium">
+        <span id="totale" class="mb-[10px]">Spesa totale: </span>
+        <span id="totaleSconto" class="">Spesa con codice sconto: </span>
+      </div>
+    </section>
+  </main>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
