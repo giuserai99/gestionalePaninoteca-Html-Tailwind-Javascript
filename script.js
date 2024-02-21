@@ -38,5 +38,32 @@ function codice() {
     alert("Il codice sconto segreto è: BANANA12");
 }
 
+//funzione escluisività check
+function changeChecked() {
+    if(hamburger.checked==true){
+        cotoletta.setAttribute("disabled", "disabled");
+        vegano.setAttribute("disabled", "disabled");
+        salmone.setAttribute("disabled", "disabled");
+    } else if(cotoletta.checked==true){
+        hamburger.setAttribute("disabled", "disabled");
+        vegano.setAttribute("disabled", "disabled");
+        salmone.setAttribute("disabled", "disabled");
+    } else if(vegano.checked==true){
+        hamburger.setAttribute("disabled", "disabled");
+        cotoletta.setAttribute("disabled", "disabled");
+        salmone.setAttribute("disabled", "disabled");
+    } else if(salmone.checked==true){
+        hamburger.setAttribute("disabled", "disabled");
+        cotoletta.setAttribute("disabled", "disabled");
+        vegano.setAttribute("disabled", "disabled");
+    } else {
+        hamburger.removeAttribute("disabled");
+        cotoletta.removeAttribute("disabled");
+        vegano.removeAttribute("disabled");
+        salmone.removeAttribute("disabled");
+    }
+}
+
+
 
 // Fare logica checkbox e totale

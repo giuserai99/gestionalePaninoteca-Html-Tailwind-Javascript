@@ -27,19 +27,19 @@
       <div id="sinistra" class="flex flex-col">
         <h3 class="font-medium mb-[10px]">Ingrediente principale:</h3>
         <div class="mb-[10px]">
-          <input type="checkbox" id="hambuger">
+          <input type="checkbox" id="hambuger" onclick="changeChecked()">
           <label for="hambuger">Hambuger 2.50€</label>
         </div>
         <div class="mb-[10px]">
-          <input type="checkbox" id="cotoletta">
+          <input type="checkbox" id="cotoletta" onclick="changeChecked()">
           <label for="cotoletta">Cotoletta 2€</label>
         </div>
         <div class="mb-[10px]">
-          <input type="checkbox" id="vegano">
+          <input type="checkbox" id="vegano" onclick="changeChecked()">
           <label for="vegano">Hambger vegano 3.50€</label>
         </div>
         <div class="mb-[10px]">
-          <input type="checkbox" id="salmone">
+          <input type="checkbox" id="salmone" onclick="changeChecked()">
           <label for="salmone">Salmone 3€</label>
         </div>
       </div>
@@ -70,8 +70,8 @@
         <span class="font-medium">Calcola il prezzo</span>
       </div>
       <div id="sconto" class=" flex flex-col w-[250px] ">
-        <label for="text" class="font-medium">Inserisci il tuo codice sconto:</label>
-        <input onclick="codice()" type="text" class="h-[35px] shadow-md">
+        <label for="" class="font-medium">Inserisci il tuo codice sconto:</label>
+        <input onclick="codice()" id="codice" type="text" class="h-[35px] shadow-md">
       </div>
     </section>
 
